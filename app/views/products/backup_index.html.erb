@@ -1,0 +1,8 @@
+<% @all_products.each do |index| %>
+  <% index['result'].each do |product| %>
+    <section>
+      <%= link_to product['name'], product_path(product['id']) %>
+      <span><%= product['price_per_liter_of_alcohol_in_cents'].to_f / 100 %> </span>
+    </section>
+  <% end %>
+<% end %>

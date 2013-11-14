@@ -1,0 +1,7 @@
+<h3><%= @product['name'] %></h3> 
+<%= formatted_price @product['price_in_cents'] %>
+<br>
+<div>
+<img src="<%= @product['image_thumb_url'] %>" alt="">
+</div>
+<%= link_to "Home", products_path %>
